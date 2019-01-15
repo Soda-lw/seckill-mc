@@ -14,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 
@@ -72,6 +74,17 @@ public class SeckillServiceImplTest {
             String md5 = exposer.getMd5();
             SeckillExecution execution = seckillService.executeSeckillProcedure(seckillId,phone,md5);
             logger.info(execution.getStateInfo());
+        }
+    }
+
+    @Test
+    public void testList() {
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        for(Iterator<Integer> ite = list.iterator();ite.hasNext();) {
+            int num = ite.next();
+            if(num ==1){
+                ite.remove();
+            }
         }
     }
 }

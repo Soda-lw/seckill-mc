@@ -38,6 +38,8 @@
           <element id="library" level="project" name="Maven: com.dyuproject.protostuff:protostuff-runtime:1.0.8" />
           <element id="library" level="project" name="Maven: com.dyuproject.protostuff:protostuff-collectionschema:1.0.8" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:5.1.8" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
